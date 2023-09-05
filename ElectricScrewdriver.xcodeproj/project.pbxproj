@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2505D12C290E465B0059D629 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505D12B290E465B0059D629 /* AppDelegate.swift */; };
+		2505D12E290E465B0059D629 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505D12D290E465B0059D629 /* ViewController.swift */; };
+		2505D130290E465C0059D629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2505D12F290E465C0059D629 /* Assets.xcassets */; };
+		2505D133290E465C0059D629 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2505D131290E465C0059D629 /* Main.storyboard */; };
+		2505D146290E466B0059D629 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505D145290E466B0059D629 /* SourceEditorExtension.swift */; };
+		2505D148290E466B0059D629 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505D147290E466B0059D629 /* SourceEditorCommand.swift */; };
+		2505D14D290E466B0059D629 /* ESExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2505D13E290E466B0059D629 /* ESExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2505D154290E47180059D629 /* ImportHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505D152290E47180059D629 /* ImportHeader.swift */; };
+		2505D155290E47180059D629 /* GeneratePropertyGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505D153290E47180059D629 /* GeneratePropertyGetter.swift */; };
+		250D9871290E534B00291159 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 250D9870290E534A00291159 /* Info.plist */; };
+		25162B4D291118D1004C6CBF /* JSON2OCProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25162B4C291118D1004C6CBF /* JSON2OCProperty.swift */; };
+		258879B4290E553900FA1761 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2505D140290E466B0059D629 /* Cocoa.framework */; };
+		258879B5290E553D00FA1761 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2505D142290E466B0059D629 /* XcodeKit.framework */; };
+		258879B6290E553D00FA1761 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2505D142290E466B0059D629 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2505D14B290E466B0059D629 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2505D120290E465B0059D629 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2505D13D290E466B0059D629;
+			remoteInfo = ESExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2505D151290E466B0059D629 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2505D14D290E466B0059D629 /* ESExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		258879B7290E553D00FA1761 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				258879B6290E553D00FA1761 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2505D128290E465B0059D629 /* ElectricScrewdriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElectricScrewdriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2505D12B290E465B0059D629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2505D12D290E465B0059D629 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2505D12F290E465C0059D629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2505D132290E465C0059D629 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2505D134290E465C0059D629 /* ElectricScrewdriver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ElectricScrewdriver.entitlements; sourceTree = "<group>"; };
+		2505D13E290E466B0059D629 /* ESExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ESExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2505D140290E466B0059D629 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2505D142290E466B0059D629 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		2505D145290E466B0059D629 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		2505D147290E466B0059D629 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		2505D14A290E466B0059D629 /* ESExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ESExtension.entitlements; sourceTree = "<group>"; };
+		2505D152290E47180059D629 /* ImportHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportHeader.swift; sourceTree = "<group>"; };
+		2505D153290E47180059D629 /* GeneratePropertyGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePropertyGetter.swift; sourceTree = "<group>"; };
+		250D9870290E534A00291159 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25162B4C291118D1004C6CBF /* JSON2OCProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON2OCProperty.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2505D125290E465B0059D629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2505D13B290E466B0059D629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258879B4290E553900FA1761 /* Cocoa.framework in Frameworks */,
+				258879B5290E553D00FA1761 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2505D11F290E465B0059D629 = {
+			isa = PBXGroup;
+			children = (
+				2505D12A290E465B0059D629 /* ElectricScrewdriver */,
+				2505D144290E466B0059D629 /* ESExtension */,
+				2505D13F290E466B0059D629 /* Frameworks */,
+				2505D129290E465B0059D629 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2505D129290E465B0059D629 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2505D128290E465B0059D629 /* ElectricScrewdriver.app */,
+				2505D13E290E466B0059D629 /* ESExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2505D12A290E465B0059D629 /* ElectricScrewdriver */ = {
+			isa = PBXGroup;
+			children = (
+				2505D12B290E465B0059D629 /* AppDelegate.swift */,
+				2505D12D290E465B0059D629 /* ViewController.swift */,
+				2505D12F290E465C0059D629 /* Assets.xcassets */,
+				2505D131290E465C0059D629 /* Main.storyboard */,
+				2505D134290E465C0059D629 /* ElectricScrewdriver.entitlements */,
+			);
+			path = ElectricScrewdriver;
+			sourceTree = "<group>";
+		};
+		2505D13F290E466B0059D629 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2505D140290E466B0059D629 /* Cocoa.framework */,
+				2505D142290E466B0059D629 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2505D144290E466B0059D629 /* ESExtension */ = {
+			isa = PBXGroup;
+			children = (
+				2505D145290E466B0059D629 /* SourceEditorExtension.swift */,
+				2505D147290E466B0059D629 /* SourceEditorCommand.swift */,
+				2505D153290E47180059D629 /* GeneratePropertyGetter.swift */,
+				2505D152290E47180059D629 /* ImportHeader.swift */,
+				25162B4C291118D1004C6CBF /* JSON2OCProperty.swift */,
+				250D9870290E534A00291159 /* Info.plist */,
+				2505D14A290E466B0059D629 /* ESExtension.entitlements */,
+			);
+			path = ESExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2505D127290E465B0059D629 /* ElectricScrewdriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2505D137290E465C0059D629 /* Build configuration list for PBXNativeTarget "ElectricScrewdriver" */;
+			buildPhases = (
+				2505D124290E465B0059D629 /* Sources */,
+				2505D125290E465B0059D629 /* Frameworks */,
+				2505D126290E465B0059D629 /* Resources */,
+				2505D151290E466B0059D629 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2505D14C290E466B0059D629 /* PBXTargetDependency */,
+			);
+			name = ElectricScrewdriver;
+			productName = ElectricScrewdriver;
+			productReference = 2505D128290E465B0059D629 /* ElectricScrewdriver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2505D13D290E466B0059D629 /* ESExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2505D14E290E466B0059D629 /* Build configuration list for PBXNativeTarget "ESExtension" */;
+			buildPhases = (
+				2505D13A290E466B0059D629 /* Sources */,
+				2505D13B290E466B0059D629 /* Frameworks */,
+				2505D13C290E466B0059D629 /* Resources */,
+				258879B7290E553D00FA1761 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ESExtension;
+			productName = ESExtension;
+			productReference = 2505D13E290E466B0059D629 /* ESExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2505D120290E465B0059D629 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					2505D127290E465B0059D629 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					2505D13D290E466B0059D629 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 2505D123290E465B0059D629 /* Build configuration list for PBXProject "ElectricScrewdriver" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2505D11F290E465B0059D629;
+			productRefGroup = 2505D129290E465B0059D629 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2505D127290E465B0059D629 /* ElectricScrewdriver */,
+				2505D13D290E466B0059D629 /* ESExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2505D126290E465B0059D629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2505D130290E465C0059D629 /* Assets.xcassets in Resources */,
+				2505D133290E465C0059D629 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2505D13C290E466B0059D629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250D9871290E534B00291159 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2505D124290E465B0059D629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2505D12E290E465B0059D629 /* ViewController.swift in Sources */,
+				2505D12C290E465B0059D629 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2505D13A290E466B0059D629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2505D154290E47180059D629 /* ImportHeader.swift in Sources */,
+				2505D146290E466B0059D629 /* SourceEditorExtension.swift in Sources */,
+				2505D155290E47180059D629 /* GeneratePropertyGetter.swift in Sources */,
+				2505D148290E466B0059D629 /* SourceEditorCommand.swift in Sources */,
+				25162B4D291118D1004C6CBF /* JSON2OCProperty.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2505D14C290E466B0059D629 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2505D13D290E466B0059D629 /* ESExtension */;
+			targetProxy = 2505D14B290E466B0059D629 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2505D131290E465C0059D629 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2505D132290E465C0059D629 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2505D135290E465C0059D629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2505D136290E465C0059D629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2505D138290E465C0059D629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ElectricScrewdriver/ElectricScrewdriver.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = D4AVN4SCPV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.ElectricScrewdriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = MAC_Wildcard;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2505D139290E465C0059D629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ElectricScrewdriver/ElectricScrewdriver.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = D4AVN4SCPV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.ElectricScrewdriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = MAC_Wildcard;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2505D14F290E466B0059D629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ESExtension/ESExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = D4AVN4SCPV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ESExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ESExtension;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.ElectricScrewdriver.ESExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = MAC_Wildcard;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2505D150290E466B0059D629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ESExtension/ESExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = D4AVN4SCPV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ESExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ESExtension;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.ElectricScrewdriver.ESExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = MAC_Wildcard;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2505D123290E465B0059D629 /* Build configuration list for PBXProject "ElectricScrewdriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2505D135290E465C0059D629 /* Debug */,
+				2505D136290E465C0059D629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2505D137290E465C0059D629 /* Build configuration list for PBXNativeTarget "ElectricScrewdriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2505D138290E465C0059D629 /* Debug */,
+				2505D139290E465C0059D629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2505D14E290E466B0059D629 /* Build configuration list for PBXNativeTarget "ESExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2505D14F290E466B0059D629 /* Debug */,
+				2505D150290E466B0059D629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2505D120290E465B0059D629 /* Project object */;
+}
