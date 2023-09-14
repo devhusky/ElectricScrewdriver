@@ -4,8 +4,11 @@
 ## 
 一、快速声明属性
 属性结构如下，每次声明一个属性，每次都需要重复输入声明、修饰符、类型和变量名。其实除了类型和变量名，其他结构基本一致，这种情况其实完全可以将重复的部分生成代码块，这样就可以通过极短的输入提示出完整的属性声明。
+
 ![1.gif](https://upload-images.jianshu.io/upload_images/9487547-5f2b52708187cea6.gif?imageMogr2/auto-orient/strip)
+
 常规输入，虽然IDE也会有自动提示，不过还是不够快。
+
 ![2.gif](https://upload-images.jianshu.io/upload_images/9487547-b6c5bcaaa179ab82.gif?imageMogr2/auto-orient/strip)
 
 代码块输入，只需要输入代码块对应的关键字，就会直接提示整个代码块。直接tab选中占位符即可直接输入类型和变量名。
@@ -29,10 +32,12 @@
 ## 三、批量生成懒加载
 点击工具栏 Editor -> ESExtension -> Generator Property Getter 或快捷键 ^ + G 生成属性懒加载。
 效果：
+
 ![3.gif](https://upload-images.jianshu.io/upload_images/9487547-7fc90a6abba4959b.gif?imageMogr2/auto-orient/strip)
 
 ## 四、JSON转OC Model
 效果：
+
 ![4.gif](https://upload-images.jianshu.io/upload_images/9487547-48a935b4d6410863.gif?imageMogr2/auto-orient/strip)
 
 示例
@@ -136,6 +141,7 @@
 https://github.com/devhusky/ElectricScrewdriver
 
 插件设置，授权扩展权限
+
 ![扩展设置_1.png](https://upload-images.jianshu.io/upload_images/9487547-ae5f9166faadb5ab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 ![扩展开启_2.png](https://upload-images.jianshu.io/upload_images/9487547-b9cfce641e78fdc7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
@@ -144,6 +150,7 @@ https://github.com/devhusky/ElectricScrewdriver
 
 设置快捷键
 点击工具栏 Xcode -> Perferences -> Key Bindings -> 搜索 ESExtension -> 点击key输入框编辑快捷键
+
 ![image.png](https://upload-images.jianshu.io/upload_images/9487547-2bc350030ca72e8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 Tips: 如果Key Bindings 无法编辑，切换到系统英文输入法，再进行编辑。
